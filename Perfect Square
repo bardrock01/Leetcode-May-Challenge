@@ -1,0 +1,23 @@
+class Solution {
+    public boolean isPerfectSquare(int num) {
+ 
+        int i;
+        boolean found=false;
+        
+        for(i=1;i<=(num/2)+ 1; i++)
+        {
+            if(i*i == num)
+            {
+                found=true;
+                break;
+            }
+            
+            if(i*i>num)
+            {
+                break;
+            }
+        }
+        
+        return found;
+    }
+}
